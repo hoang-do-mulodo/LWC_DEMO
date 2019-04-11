@@ -1,0 +1,11 @@
+<template>
+    <div class="container">
+        <template for:each={seminars} for:item="seminar">
+                <c-seminar
+                    key={seminar.Id}
+                    seminar={seminar}
+                    onseminarclick={handleSeminarClick}
+                ></c-seminar>
+        </template>
+    </div>
+</template>

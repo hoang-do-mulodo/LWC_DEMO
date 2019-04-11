@@ -1,0 +1,16 @@
+<template>
+        <lightning-card title="Precentage Contact" icon-name="standard:contact">
+                <div class="slds-m-around_medium">
+                    <p>Page : {pageNumber}</p>
+                    <lightning-input label="Precentage" 
+                    type="number"
+                    max="100"
+                    value={precentage} 
+                    onchange={handlePrecentageChange}
+                    min="0">
+
+                    </lightning-input>
+                    <c-child-contact precentage={precentage} onprevious={handlePrevious} onnext={handleNext}></c-child-contact>
+                </div>
+        </lightning-card>    
+</template>

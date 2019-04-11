@@ -1,0 +1,47 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/childContact": [
+                "childContact/childContact.js"
+            ],
+            "c/helloWorld": [
+                "helloWorld/helloWorld.js"
+            ],
+            "c/parentContact": [
+                "parentContact/parentContact.js"
+            ],
+            "c/recordFormDynamicContact": [
+                "recordFormDynamicContact/recordFormDynamicContact.js"
+            ],
+            "c/seminar": [
+                "seminar/seminar.js"
+            ],
+            "c/seminarDetail": [
+                "seminarDetail/seminarDetail.js"
+            ],
+            "c/seminarList": [
+                "seminarList/seminarList.js"
+            ],
+            "c/seminarSelector": [
+                "seminarSelector/seminarSelector.js"
+            ],
+            "c/seminarWebComponent": [
+                "seminarWebComponent/seminarWebComponent.js"
+            ],
+            "c/util": [
+                "util/util.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    }
+}

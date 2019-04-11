@@ -1,0 +1,9 @@
+<template>
+    <lightning-card variant="Narrow" title="Hello World" icon-name="standard:account">
+            <lightning-button-icon  icon-name="utility:down" variant="border-filled" alternative-text="Show More" slot="actions"></lightning-button-icon>
+        <div class="slds-m-around_medium">
+            <p> Hello , {greeting}!</p>
+            <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+        </div>
+    </lightning-card>
+</template>

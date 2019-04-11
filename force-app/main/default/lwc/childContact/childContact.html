@@ -1,0 +1,23 @@
+<template>
+        <div class="container">
+            <lightning-layout vertical-align="center">
+                <lightning-layout-item>
+                    {precentage}%
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="grow">
+                    <div class="bar" style={style}>Hoang Do</div>
+                </lightning-layout-item>
+            </lightning-layout>
+            <lightning-layout>
+                <lightning-layout-item>
+                    <lightning-button label="Pre" icon-name="utility:chevronleft" onclick={previous}></lightning-button>
+                </lightning-layout-item>
+                <lightning-layout-item flexibility="grow"></lightning-layout-item>
+                <p class="text-number" >{testNumber}</p>
+                <lightning-layout-item>
+                    <lightning-button label="Next" icon-name="utility:chevronright" icon-position="right" onclick={next}></lightning-button>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>    
+
+</template>
