@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 /* eslint-disable @lwc/lwc/no-async-operation */
 import { LightningElement, wire , track, api } from 'lwc';
 import { getRecord } from 'lightning/uiRecordApi';

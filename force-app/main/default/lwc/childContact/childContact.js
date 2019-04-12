@@ -4,7 +4,7 @@ import {testShareFunction} from 'c/util';
 export default class ChildContact extends LightningElement {
     @api precentage;
     @api pageNumber;
-    @track testNumber = testShareFunction();
+    @track dataRecieved = testShareFunction();
     get style(){
         return `width: ${this.precentage}% ; color: red`;
     }

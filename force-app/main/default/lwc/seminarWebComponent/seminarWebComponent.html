@@ -4,7 +4,7 @@
         <div class="slds-m-around_medium" if:true={ready}>
             <lightning-input type="search" class="slds-m-bottom_small" onchange={handleChange} label="Search" value={searchKeyLayout}></lightning-input>
 
-            <lightning-button onclick={handleLoad} label="Load"></lightning-button>
+            <!-- <lightning-button onclick={handleLoad} label="Load"></lightning-button> -->
             <template if:true={seminars.data}>
                 <p>List Seminar</p>
                 <hr>
@@ -13,9 +13,6 @@
                 </template>
 
             </template>
-            <!-- <template if:true={seminars.error}>
-                <c-error-panel errors={seminars.error}></c-error-panel>
-            </template> -->
         </div>
     </lightning-card>
 </template>
